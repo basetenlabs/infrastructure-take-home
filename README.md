@@ -6,12 +6,11 @@ This is the baseten infra engineer/SRE take home challenge. It should be a short
 - **Estimated time:** max. 2hours. We'd like to see some actual code, but you can also leave a bunch of comments on things you would improve. We're trying to be respectful of your time here so we'll understand missing stuff.
 
 ## Scenario
-We've simulated an architecture where a service (`main.py`) calls another service (`remote_server.py`). Sadly remote_server isn't as reliable as we thought and it makes `main.py` fail randomly.
+We've simulated an architecture where a service (`main.py`) calls another service (`remote_server.py`). Unfortunately `remote_server` is hosted, on the internet, and is not 100% reliable (as all online things).
 
 **The goal here is to evaluate some knowledge of infrastructure and reliability conceps.**
 
-Try to improve `main.py` to be more resilient to `remote_server.py` failures and add some 
-reliability and infrastructure concepts in. There are multiple ways to approach this problem and multiple topics you could take on.
+Try to improve `main.py` to be more resilient to `remote_server.py` failures and add some reliability and infrastructure concepts in. There are multiple ways to approach this problem and multiple topics you could take on.
 
 
 Example topics of improvements to the server:
