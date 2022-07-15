@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "baseten-infra-take-home"
+version = "1.0.0"
+description = "Baseten infra take home python boilerplate"
+authors = ["Pierre-Alexandre St-Jean <pa@baseten.co>"]
+
+[tool.poetry.dependencies]
+python = ">=3.9, <4.0"
+fastapi = "^0.76.0"
+uvicorn = {extras = ["standard"], version = "^0.17.6"}
+strawberry-graphql = {extras = ["fastapi"], version = "^0.111.1"}
+aiohttp = "^3.8.1"
+
+[tool.poetry.dev-dependencies]
+black = "^22.3.0"
+flake8 = "^4.0.1"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.black]
+line-length = 79

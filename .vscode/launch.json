@@ -1,0 +1,33 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Run Server",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "baseten_infra_take_home.main:app",
+                "--reload"
+            ],
+            "jinja": true,
+            "justMyCode": true
+        },
+        {
+            "name": "Python: Run Remote Endpoint",
+            "type": "python",
+            "request": "launch",
+            "module": "uvicorn",
+            "args": [
+                "baseten_infra_take_home.remote_server:app",
+                "--reload",
+                "--port=8001"
+            ],
+            "jinja": true,
+            "justMyCode": true
+        },
+    ]
+}
