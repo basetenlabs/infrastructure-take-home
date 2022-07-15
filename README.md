@@ -1,14 +1,14 @@
-This is the baseten infra engineer/SRE take home challenge. It should be a short challenge, we don't expect everything to be coded, comments on what you would do or would improve will also be evaluated in hight regard. It is optional to use this boilerplate (eg: you want to use a different language) but we do think it's gonna save you some precious time.
+This is the Baseten infra engineer/SRE take home challenge. It should be a short challenge, we don't expect everything to be coded, comments on what you would do or would improve will also be happily evaluated. It is optional to use this boilerplate (eg: you want to use a different language) but we do think it's gonna save you some precious time.
 
 # The Problem
 
 - **Goal:** Show us your ability to incorporate reliability & infrastructure concepts through code
-- **Estimated time:** max. 2hours. We'd like to see some actual code, but you can also leave a bunch of comments on things you would improve. We're trying to be respectful of your time here so we'll understand missing stuff.
+- **Estimated time:** max. 2hours. We'd like to see some actual code, but you can also leave a bunch of comments on things you would improve. We're trying to be respectful of your time here so we totally understand if stuff is stubbed out or missing.
 
 ## Scenario
-We've simulated an architecture where a service (`main.py`) calls another service (`remote_server.py`). Unfortunately `remote_server` is hosted, on the internet, and is not 100% reliable (as all online things).
+We've simulated an architecture where a service (`main.py`) calls another service (`remote_server.py`). Unfortunately `remote_server` is hosted on the internet and as such is not 100% reliable (as with all online things).
 
-**The goal here is to evaluate some knowledge of infrastructure and reliability conceps.**
+**Our goal is to evaluate some knowledge of infrastructure and reliability concepts.**
 
 Try to improve `main.py` to be more resilient to `remote_server.py` failures and add some reliability and infrastructure concepts in. There are multiple ways to approach this problem and multiple topics you could take on.
 
@@ -78,11 +78,11 @@ make start
 make lint
 ```
 
-## Libraries Documentation
+## Libraries' Documentation
 
 - Strawberry: https://strawberry.rocks/docs
 - FastAPI: https://fastapi.tiangolo.com/
 - AIOHTTP: https://docs.aiohttp.org/en/stable/
 - Pydantic: https://pydantic-docs.helpmanual.io/
 
-Feel free to replace any of those, we've provided a boilerplate to ease the start of the take home and free you some time.
+Feel free to replace any of those, we've provided a boilerplate to ease the start of the take home and save you some time.
