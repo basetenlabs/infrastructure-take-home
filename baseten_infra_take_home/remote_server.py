@@ -1,7 +1,8 @@
 """
 remote_server is the implementation of the remote endpoint.
 It is intended to simulate failures and other random behaviour.
-Just start it and query it.
+Just start it and query it or query it from our already running
+remote endpoint.
 
 **NOTE TO TEST TAKERS: DO NOT MODIFY THIS FILE**
 """
@@ -15,6 +16,7 @@ import time
 from datetime import datetime as dt
 from logging import getLogger
 from base64 import b64encode
+from fastapi.responses import HTMLResponse
 
 logger = getLogger(__name__)
 
@@ -42,6 +44,10 @@ class PostInvokeResponse(BaseModel):
     latency_ms: int
     output: str = Field(default_factory=lambda: True)
 
+
+@app.get("/", response_class=HTMLResponse)
+async def get_index():
+    return "Baseten Infrastructure take home"
 
 @app.post("/invoke", response_model=PostInvokeResponse)
 async def post_invoke(request: PostInvokeRequest):

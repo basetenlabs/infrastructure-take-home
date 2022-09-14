@@ -57,7 +57,7 @@ class Endpoint(BaseModel):
 
 
 INVOKE_ENDPOINT = Endpoint(
-    url="http://localhost:8001/invoke",  # noqa
+    url="https://infrastructure-take-home.fly.dev/invoke",  # noqa
     authorization="Api-Key YXBpLWtleQo=",
 )
 

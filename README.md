@@ -2,11 +2,11 @@ This is the Baseten infra engineer/SRE take home challenge. It should be a short
 
 # The Problem
 
-- **Goal:** Show us your ability to incorporate reliability & infrastructure concepts through code
+- **Goal:** Show us your ability to incorporate reliability & infrastructure concepts through code by making making `main.py` handle failures that come from https://infrastructure-take-home.fly.dev/.
 - **Estimated time:** max. 2hours. We'd like to see some actual code, but you can also leave a bunch of comments on things you would improve. We're trying to be respectful of your time here so we totally understand if stuff is stubbed out or missing.
 
 ## Scenario
-We've simulated an architecture where a service (`main.py`) calls another service (`remote_server.py`). Unfortunately `remote_server` is hosted on the internet and as such is not 100% reliable (as with all online things).
+We've simulated an architecture where a service (`main.py`) calls another service (`remote_server.py`) which is hosted here https://infrastructure-take-home.fly.dev/. Unfortunately `remote_server` is hosted on the internet and as such is not 100% reliable (as with all online things).
 
 **Our goal is to evaluate some knowledge of infrastructure and reliability concepts.**
 
@@ -21,6 +21,7 @@ Example topics of improvements to the server:
 - Timeouts
 - Circuit breakers
 - Charge distribution / load-balancing
+- ...
 
 Example topics of improvements around the server:
 - CI/CD
@@ -28,7 +29,7 @@ Example topics of improvements around the server:
 - ...
 
 
-**Note:** I suggest you look at `remote_server.py`, but do not modify it at it's your "test endpoint" and it generates errors on purpose. The goal here is for you to make main.py somewhat more reliable.
+**Note:** I suggest you look at `remote_server.py`, it's the implementation of your "test endpoint" and it generates errors on purpose. The goal here is for you to make main.py somewhat more reliable.
 
 
 # The boilerplate & remote server
@@ -39,8 +40,7 @@ Example topics of improvements around the server:
 
 ## Run
 
-1. Start the remote endpoint (using vscode launch configurations or `make remote_endpoint`)
-2. Start your local server (using vscode launch configurations or `make start`)
+1. Start your local server (using vscode launch configurations or `make start`)
 
 Once the server runs you can open `http://localhost:8000/graphql` and test the API with a sample graphql query.
 
