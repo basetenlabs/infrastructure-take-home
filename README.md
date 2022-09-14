@@ -2,7 +2,7 @@ This is the Baseten infra engineer/SRE take home challenge. It should be a short
 
 # The Problem
 
-- **Goal:** Show us your ability to incorporate reliability & infrastructure concepts through code by making making `main.py` handle failures that come from https://infrastructure-take-home.fly.dev/.
+- **Goal:** Show us your ability to incorporate reliability & infrastructure concepts through code by making making `main.py` handle failures that come from the remote web service https://infrastructure-take-home.fly.dev/.
 - **Estimated time:** max. 2hours. We'd like to see some actual code, but you can also leave a bunch of comments on things you would improve. We're trying to be respectful of your time here so we totally understand if stuff is stubbed out or missing.
 
 ## Scenario
@@ -10,7 +10,7 @@ We've simulated an architecture where a service (`main.py`) calls another servic
 
 **Our goal is to evaluate some knowledge of infrastructure and reliability concepts.**
 
-Try to improve `main.py` to be more resilient to `remote_server.py` failures and add some reliability and infrastructure concepts in. There are multiple ways to approach this problem and multiple topics you could take on.
+Try to improve `main.py` to be more resilient to `https://infrastructure-take-home.fly.dev/` failures by adding some reliability and observability concepts in. There are multiple ways to approach this problem and multiple topics you could take on.
 
 
 Example topics of improvements to the server:
