@@ -13,7 +13,7 @@ from fastapi import FastAPI
 from fastapi.responses import JSONResponse
 import secrets
 import time
-from datetime import datetime as dt
+from datetime import timedelta, datetime as dt
 from logging import getLogger
 from base64 import b64encode
 from fastapi.responses import HTMLResponse
@@ -90,13 +90,14 @@ async def post_invoke(request: PostInvokeRequest):
         )
 
     # Sleep for a random amount of time
-    latency_ms = secrets.randbelow(100)
+    latency_ms = timedelta(milliseconds=secrets.randbelow(1000))
+    
     # 5% of the time take a really long time to respond
     if percentage_bool(0.05):
-        latency_ms = 300000  # 5 minutes
+        latency_ms = timedelta(minutes=5)
 
     # take some time to respond
-    time.sleep(0.01 * latency_ms)
+    time.sleep(timedelta.total_seconds())
 
     return PostInvokeResponse(
         latency_ms=latency_ms,
