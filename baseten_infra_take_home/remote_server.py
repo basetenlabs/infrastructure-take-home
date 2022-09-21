@@ -97,10 +97,10 @@ async def post_invoke(request: PostInvokeRequest):
         latency_ms = timedelta(minutes=5)
 
     # take some time to respond
-    time.sleep(timedelta.total_seconds())
+    time.sleep(latency_ms.total_seconds())
 
     return PostInvokeResponse(
-        latency_ms=latency_ms,
+        latency_ms=latency_ms.total_seconds()*1000,
         output=b64encode(request.input.encode("utf-8")).decode("utf-8"),
     )
 
