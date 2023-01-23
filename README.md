@@ -1,4 +1,4 @@
-This is the Baseten infra engineer/SRE take home challenge. It should be a short challenge, we don't expect everything to be coded, comments on what you would do or would improve will also be happily evaluated. It is optional to use this boilerplate (eg: you want to use a different language) but we do think it's gonna save you some precious time.
+This is the Baseten platform engineer take-home challenge. It should be a short challenge, we don't expect everything to be coded, comments on what you would do or would improve will also be happily evaluated. It is optional to use this boilerplate (eg: you want to use a different language) but we do think it's gonna save you some precious time.
 
 # The Problem
 
